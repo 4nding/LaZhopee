@@ -8,7 +8,6 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import HomeScreen from './screens/HomeScreen';
 import CategoryScreen from './screens/CategoryScreen';
 import FavoritesScreen from './screens/FavoritesScreen';
-import ServicesScreen from './screens/ServicesScreen'; 
 import AboutUsScreen from './screens/AboutUsScreen';
 import ContactScreen from './screens/ContactScreen';
 import LogoutScreen from './screens/LogoutScreen'; 
@@ -44,7 +43,6 @@ function MyDrawer() {
   return (
     <Drawer.Navigator initialRouteName="Home">
       <Drawer.Screen name="Home" component={MyTabs} />
-      <Drawer.Screen name="Services" component={ServicesScreen} />
       <Drawer.Screen name="About Us" component={AboutUsScreen} />
       <Drawer.Screen name="Contact" component={ContactScreen} />
       <Drawer.Screen name="Logout" component={LogoutScreen} />

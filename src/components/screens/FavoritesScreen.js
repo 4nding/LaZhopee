@@ -33,7 +33,7 @@ const FavoritesScreen = () => {
         renderItem={renderFavoriteItem}
         keyExtractor={item => item.id}
         contentContainerStyle={styles.listContainer}
-        showsVerticalScrollIndicator={false} // Hide vertical scroll indicator
+        showsVerticalScrollIndicator={false}
       />
     </View>
   );

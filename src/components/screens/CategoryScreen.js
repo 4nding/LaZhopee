@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, Modal, Button, ScrollView } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Image, Dimensions } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -61,21 +61,21 @@ const PetsCategoryScreen = () => {
 const styles = StyleSheet.create({
   screen: {
     justifyContent: 'center',
+    alignItems: 'center',
     flex: 1,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    padding: 20,
+    flexDirection: 'column',
+    padding: 10,
   },
   categoryContainer: {
-    width: '25%',
-    margin: 10,
+    width: '80%', // Adjust as needed
+    marginVertical: 10,
     alignItems: 'center',
   },
   categoryIcon: {
-    width: 100,
-    height: 100,
+    width: 100, // Adjust as needed
+    height: 100, // Adjust as needed
     marginBottom: 10,
-    borderRadius: 50,
+    borderRadius: 10, // Half of the width or height to maintain circular shape
   },
   category: {
     fontSize: 18,
